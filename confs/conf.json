@@ -1,0 +1,45 @@
+{
+  "product": "AESIR Custom Screenshot Tool",
+  "version": 1,
+  "development_link": "https://github.com/muratdemirtas/aesir",
+  "product_link": "http://www.embedded-tips.com",
+  "update_link": "https://raw.githubusercontent.com/muratdemirtas/aesir/master/versions.json",
+  "googletranslatelink": "http://translate.google.com/m?&hl=%hl&sl=%sl&q=%q",
+  "icons": {
+    "folder": "/icons",
+    "indicator-disable": "systemtray-disable.png",
+    "indicator-active": "systemtray-active.png"
+  },
+  "IndicatorAPPMenuItems": [
+    "Gtk.MenuItem=NONE=activatorClickEvent=activate=False",
+    "Gtk.MenuItem=Settings=settingClickEvent=activate=True",
+    "Gtk.MenuItem=About=aboutClickEvent=activate=False",
+    "Gtk.MenuItem=Check Updates=clickCheckUpdatesCB=activate=False",
+    "Gtk.CheckMenuItem=Start on boot!=startClickEvent=toggled=True",
+    "Gtk.MenuItem=Exit=clickExitCB=activate=False"
+  ],
+  "SoftwareUpdater": {
+    "checkUpdates": 1,
+    "NotifierTitle": "AESIR Open Source Screenshot Tool",
+    "NotifierBody": "New Software Upgrade Available!",
+    "NotifierData": "Click Here for Update",
+    "NotifierActions": "action_click"
+  },
+  "ScrenshotSave": {
+    "NotifierTitle": "AESIR Open Source Screenshot Tool",
+    "NotifierFilePath": "",
+    "NotifierBody": "Screenshot saved to : ",
+    "NotifierData": "Click here for open!",
+    "NotifierActions": "action_click"
+  },
+  "ClipboardCopy": {
+    "NotifierTitle": "AESIR Open Source Screenshot Tool",
+    "NotifierFilePath": "",
+    "NotifierBody": "Screenshot saved to Clipboard!",
+    "NotifierData": "Click here for upload!",
+    "NotifierActions": "action_click"
+  },
+  "Configs": {
+    "CheckUpdates": "True"
+  }
+}
